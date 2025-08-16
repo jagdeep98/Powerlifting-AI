@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Training Plan</title>
+</head>
+<body>
+    <h1>Your 1-Week Powerlifting Program</h1>
+    {% for day, lifts in plan.items() %}
+        <h2>{{ day }}</h2>
+        <ul>
+            {% for lift in lifts %}
+                <li>{{ lift }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+    <a href="/">Go Back</a>
+</body>
+</html>

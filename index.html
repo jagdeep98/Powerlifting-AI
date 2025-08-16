@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Powerlifting Program Generator</title>
+</head>
+<body>
+    <h1>Powerlifting Program Generator</h1>
+    <form method="POST">
+        <label>Training Experience:</label>
+        <select name="experience">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select><br><br>
+
+        <label>Squat 1RM:</label>
+        <input type="number" name="squat" required><br><br>
+
+        <label>Bench 1RM:</label>
+        <input type="number" name="bench" required><br><br>
+
+        <label>Deadlift 1RM:</label>
+        <input type="number" name="deadlift" required><br><br>
+
+        <label>Training Frequency (days/week):</label>
+        <select name="frequency">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+
+        <button type="submit">Generate Plan</button>
+    </form>
+</body>
+</html>
